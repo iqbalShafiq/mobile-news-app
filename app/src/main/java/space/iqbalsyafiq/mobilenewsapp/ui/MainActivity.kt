@@ -1,7 +1,8 @@
-package space.iqbalsyafiq.mobilenewsapp
+package space.iqbalsyafiq.mobilenewsapp.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import space.iqbalsyafiq.mobilenewsapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
