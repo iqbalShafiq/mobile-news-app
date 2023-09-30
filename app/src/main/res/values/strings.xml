@@ -4,6 +4,7 @@
     <string name="app_name">Mobile News App</string>
 
     <!--  Categories  -->
+    <string name="category_list_screen_big_title">Welcome Back!</string>
     <string name="category_list_screen_title">Choose Category</string>
     <string name="business">Business</string>
     <string name="entertainment">Entertainment</string>

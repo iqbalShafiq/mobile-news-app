@@ -8,4 +8,5 @@
     <color name="light_disabled">#FF638787</color>
 
     <color name="dark_accent">#FF3A3F47</color>
+    <color name="dark_accent_ripple">#663A3F47</color>
 </resources>
