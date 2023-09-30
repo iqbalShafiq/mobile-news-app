@@ -9,31 +9,16 @@
     android:paddingTop="36dp"
     tools:context=".ui.source_list.SourceListActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_toolbar"
+        style="@style/SemiBold24Sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
         android:clipToPadding="false"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingHorizontal="24dp">
-
-        <ImageView
-            android:id="@+id/iv_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/back"
-            android:src="@drawable/ic_back" />
-
-        <TextView
-            android:id="@+id/tv_category_title"
-            style="@style/SemiBold24Sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="16dp"
-            android:clipToPadding="false"
-            tools:text="Category Title" />
-
-    </LinearLayout>
+        android:drawablePadding="16dp"
+        app:drawableStartCompat="@drawable/ic_back"
+        tools:text="Category Title" />
 
     <EditText
         style="@style/Regular14Sp"
