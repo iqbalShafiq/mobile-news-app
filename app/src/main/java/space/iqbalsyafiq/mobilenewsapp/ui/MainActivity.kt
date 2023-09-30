@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
                 CategoryListActivity::class.java
             ).apply {
                 startActivity(this)
+                finish()
             }
         }
     }

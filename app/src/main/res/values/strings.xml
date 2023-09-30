@@ -31,10 +31,12 @@
     <!--  Error & Warning  -->
     <string name="warning_logo">Warning</string>
     <string name="empty_state_message">Could’t found any sources</string>
-    <string name="no_internet_access_state_message">No Internet Access\nClick here to refresh</string>
+    <string name="empty_article_state_message">Could’t found any articles</string>
+    <string name="no_internet_access_state_message">An error occurred.\nClick here to refresh</string>
     <string name="loading_state_message">Please Wait …</string>
 
     <!--  Navigation  -->
     <string name="back">Back</string>
+    <string name="retry">Retry</string>
 
 </resources>

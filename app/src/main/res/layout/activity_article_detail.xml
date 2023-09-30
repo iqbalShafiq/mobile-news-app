@@ -7,20 +7,41 @@
     android:orientation="vertical"
     tools:context=".ui.article_detail.ArticleDetailActivity">
 
-    <TextView
-        android:id="@+id/tv_toolbar"
-        style="@style/SemiBold24Sp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/dark_accent"
-        android:clipToPadding="false"
-        android:drawablePadding="16dp"
-        android:paddingHorizontal="24dp"
-        android:paddingVertical="16dp"
-        android:text="@string/article_detail_screen_title"
-        android:textColor="@color/light_primary"
-        app:drawableStartCompat="@drawable/ic_back"
-        app:drawableTint="@color/light_primary" />
+        android:background="@color/dark_accent">
+
+        <TextView
+            android:id="@+id/tv_toolbar"
+            style="@style/SemiBold24Sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:drawablePadding="16dp"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp"
+            android:text="@string/article_detail_screen_title"
+            android:textColor="@color/light_primary"
+            app:drawableStartCompat="@drawable/ic_back"
+            app:drawableTint="@color/light_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_refresh"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="@string/retry"
+            android:src="@drawable/ic_refresh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <WebView
         android:id="@+id/wv_article_detail"

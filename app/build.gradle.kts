@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.konan.properties.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -8,6 +10,9 @@ android {
     namespace = "space.iqbalsyafiq.mobilenewsapp"
     compileSdk = 34
 
+    val properties = Properties()
+    properties.load(project.rootProject.file("local.properties").reader())
+
     defaultConfig {
         applicationId = "space.iqbalsyafiq.mobilenewsapp"
         minSdk = 24
@@ -16,6 +21,12 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField(
+            "String",
+            "API_KEY",
+            "\"${properties.getProperty("api_key")}\""
+        )
     }
 
     buildTypes {
@@ -38,6 +49,7 @@ android {
     }
 
     buildFeatures {
+        buildConfig = true
         viewBinding = true
     }
 }

@@ -6,6 +6,8 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 import space.iqbalsyafiq.mobilenewsapp.di.networkModule
+import space.iqbalsyafiq.mobilenewsapp.di.repositoryModule
+import space.iqbalsyafiq.mobilenewsapp.di.viewModelModule
 
 class MyApplication : Application() {
     override fun onCreate() {
@@ -15,7 +17,9 @@ class MyApplication : Application() {
             androidContext(this@MyApplication)
             modules(
                 listOf(
-                    networkModule
+                    networkModule,
+                    repositoryModule,
+                    viewModelModule
                 )
             )
         }
