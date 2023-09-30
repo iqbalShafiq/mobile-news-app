@@ -7,6 +7,7 @@
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage And Screenshots](#usage-and-screenshots)
+- [APK Download](#apk-download)
 
 ## Introduction
 
@@ -75,3 +76,6 @@ But the feature of the search function will take 1500ms (1.5 seconds) after the 
 
 - When you click on the articles, you will be moved to the article detail that shows you a Webview of the URL that is given from the articles API. Here you can also refresh the Webview if you think it is necessary.
 <img src="https://i.ibb.co/kcWjYVM/Article-Detail.png" alt="Article Detail Screen" style="width:240px;"/>
+
+## APK Download
+Besides you can download the APK directly on this Github release, you can also download it via this [Google Drive link](https://drive.google.com/file/d/1-Y-pfcKCV8pYdek9Ut1LyyaJUpEqljvq/view?usp=sharing).
