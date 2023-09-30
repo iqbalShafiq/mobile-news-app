@@ -1,5 +1,6 @@
 # mobile-news-app
 <img src="https://i.ibb.co/ZXCLWJP/Cover.png" alt="Cover" style="width:720px;"/>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
