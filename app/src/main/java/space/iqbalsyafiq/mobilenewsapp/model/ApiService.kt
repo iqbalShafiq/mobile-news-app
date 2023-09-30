@@ -2,6 +2,7 @@ package space.iqbalsyafiq.mobilenewsapp.model
 
 import retrofit2.http.GET
 import retrofit2.http.Query
+import space.iqbalsyafiq.mobilenewsapp.model.response.ApiResponse
 import space.iqbalsyafiq.mobilenewsapp.model.response.news.NewsResponse
 import space.iqbalsyafiq.mobilenewsapp.model.response.sources.SourceResponse
 
@@ -12,7 +13,7 @@ interface ApiService {
         @Query("category") category: String,
         @Query("page") page: Int,
         @Query("pageSize") size: Int
-    ): SourceResponse
+    ): ApiResponse<SourceResponse>
 
     @GET("top-headlines")
     suspend fun getNewsBySource(
@@ -20,5 +21,5 @@ interface ApiService {
         @Query("sources") sources: String,
         @Query("page") page: Int,
         @Query("pageSize") size: Int
-    ): NewsResponse
+    ): ApiResponse<NewsResponse>
 }
