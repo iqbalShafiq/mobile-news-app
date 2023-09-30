@@ -23,6 +23,7 @@
 
     <!--  Articles  -->
     <string name="article_list_screen_title">List of Articles</string>
+    <string name="article_detail_screen_title">Article Detail</string>
     <string name="contents">Contents</string>
     <string name="read_more">Read more</string>
     <string name="headline">Headline</string>
