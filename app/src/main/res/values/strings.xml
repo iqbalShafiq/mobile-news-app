@@ -25,12 +25,15 @@
     <string name="article_list_screen_title">List of Articles</string>
     <string name="contents">Contents</string>
     <string name="read_more">Read more</string>
+    <string name="headline">Headline</string>
 
     <!--  Error & Warning  -->
     <string name="warning_logo">Warning</string>
     <string name="empty_state_message">Could’t found any sources</string>
     <string name="no_internet_access_state_message">No Internet Access\nClick here to refresh</string>
     <string name="loading_state_message">Please Wait …</string>
+
+    <!--  Navigation  -->
     <string name="back">Back</string>
 
 </resources>
